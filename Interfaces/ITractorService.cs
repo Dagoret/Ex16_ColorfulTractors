@@ -6,7 +6,9 @@ public interface ITractorService
 {
     public IEnumerable<Tractor> GetTractors();
     public Tractor? GetTractorById(int id);
-    public Tractor PostTractor();
+    public List<Tractor> GetTractorsOrderedByGadgetsNumber();
+    public List<Tractor>? GetTractorByGadget(int id);
+    public Tractor PostTractor(TractorSimplified ts);
     public IEnumerable<Tractor> GetTractorsByColor(string color);
     public Tractor? DeleteTractor(int id);
 }

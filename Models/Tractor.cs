@@ -6,7 +6,7 @@ public class Tractor
     public string Company { get; set; }
     public string Model { get; set; }
     public string Color { get; set; }
-    public List<Gadget> gadgets { get; set; }
+    public List<Gadget> Gadgets { get; set; }
 
     public Tractor(int id, string company, string model, string color)
     {
@@ -14,6 +14,6 @@ public class Tractor
         Company = company;
         Model = model;
         Color = color;
-        gadgets = new();
+        Gadgets = new();
     }
 }
