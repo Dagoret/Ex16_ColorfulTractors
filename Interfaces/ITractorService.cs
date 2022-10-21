@@ -8,7 +8,8 @@ public interface ITractorService
     public Tractor? GetTractorById(int id);
     public List<Tractor> GetTractorsOrderedByGadgetsNumber();
     public List<Tractor>? GetTractorByGadget(int id);
-    public Tractor PostTractor(TractorSimplified ts);
     public IEnumerable<Tractor> GetTractorsByColor(string color);
+    public Tractor PostTractor(TractorSimplified ts);
     public Tractor? DeleteTractor(int id);
+    public Tractor? UpdateGadgetsOfTractor(int id, List<int> gadgetsIds);
 }

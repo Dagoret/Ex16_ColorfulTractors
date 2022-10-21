@@ -1,3 +1,6 @@
+using Ex16_ColorfulTractors.Interfaces;
+using Ex16_ColorfulTractors.Services;
+
 namespace Ex16_ColorfulTractors
 {
     public class Program
@@ -12,6 +15,8 @@ namespace Ex16_ColorfulTractors
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddTransient<ITractorService, TractorService>();
 
             var app = builder.Build();
 
